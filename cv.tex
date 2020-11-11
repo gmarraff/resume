@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{deedy-resume-openfont}
+\usepackage{verbatim}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Gianluca}{Marraffa}{ Skilled Software Developer with experience in the ERP/CRM field.\\ Familiar with Ruby on Rails ecosystem (REST API management) and Web Development in general. \\ Looking to dive in the DevOps' world. \\
+\sectionsep
+\href{mailto:marraffa3ai@gmail.com}{marraffa3ai@gmail.com} | +39 338 90 57 436
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Università degli}
+\subsection{studi di padova}
+\descript{BS in Computer Science}
+\location{Sep 2015 - Dec 2018 \\ Padova, PD, Veneto, Italy}
+\sectionsep
+
+\subsection{ITIS G. Perlasca}
+\descript{High school's diploma in Computer Science}
+\location{Sep 2010 - Jun 2015 \\ Vobarno, BS, Lombardia, Italy}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/gmarraffa}{\custombold{gmarraffa}} \\
+Bitbucket://  \href{https://bitbucket.org/Maztek/}{\custombold{Maztek}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/gianluca-marraffa/}{\custombold{gianluca-marraffa}} 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hard Skills}
+Fair \textbullet{} \underline{Confident}\\
+\custombold{Web Development}: \underline{Ruby on Rails}, VueJS, React/Redux\\
+\custombold{Scripting Languages}: Bash, \underline{Python} \\
+\custombold{DBMS}: \underline{MySQL/MariaDB}, PostgreSQL \\
+\custombold{Sysadmin}: Ubuntu Linux, Nginx, Terraform\\
+\custombold{Continous Integration}: \underline{Travis CI}\\
+\custombold{Cloud}: AWS, Digital Ocean, Github, Bitbucket \\
+\custombold{VCS}: Git\\
+\custombold{Project Management}: Asana, Trello, Jira
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Soft Skills}
+Autonomy \textbullet{} Continuous Improvement \textbullet{} Flexibility \textbullet{}
+Initiative \textbullet{} Problem Solving \textbullet{} Team Working
+\sectionsep
+\section{Other Skills}
+B2 English Level \\
+Driving License (without own car)
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\vline
+\hspace{0.01\textwidth}
+\begin{minipage}[t]{0.65\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Work History}
+
+\runsubsection{Infocert S.p.A}
+\descript{| Tools Developer - Internship }
+\location{October 2018 - November 2018 | Padova, PD, Veneto, Italy}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\item Design and Development of a Load Test automation tool;
+	\item Using JMeter as Load Test tool;
+	\item Using Terraform to provision master and slaves disposable VMs on AWS;
+	\item Using Python3 to orchestrate;
+	\item Using Flask for the GUI.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Freelancer}
+\descript{| Software Developer (full remote) }
+\location{April 2017 – September 2017 | at Cortobio S.a.C.}
+\begin{tightemize}
+\item Design and Development of the internal ERP/CRM Software;
+\item VPS Administration;
+\item Periodic Meeting with the customer to define the best solution to apply;
+\item Using Ruby on Rails, MariaDB and Nginx as Backend;
+\item Using VueJS as Frontend;
+\item Using Digital Ocean as VPS;
+\item Integrating Google Maps Geocoding API.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Freelancer}
+\descript{| Software Developer (full remote)}
+\location{October 2016 – March 2017 | at Eglis Mella}
+\begin{tightemize}
+\item Development of an ERP software;
+\item Using Ruby on Rails and PostgreSQL as backend;
+\item Using JQuery as Frontend;
+\item Using Heroku as PaaS;
+\item Integrating Google Maps Geocoding and Directions API.
+\end{tightemize}
+\sectionsep
+\runsubsection{Lombardi On Line S.R.L.}
+\descript{| Software Developer (half remote) }
+\location{April 2015 – September 2016 | Vestone, BS, Lombardia, Italty}
+\begin{tightemize}
+	\item Design and Development of the internal CRM (mostly backend);
+	\item Weekly meetings with stakeholders to understand and satisfy internal and external need;
+	\item VPS administration;
+	\item Using Ruby On Rails, Nginx and MariaDB as backend;
+	\item Using JQuery as frontend;
+	\item Using Digital Ocean for VPS services and AWS S3 as storage engine for backups.
+\end{tightemize}
+\sectionsep
+\section{Projects}
+\runsubsection{Marvin}
+\descript{| Ethereum Backed Webapp (PoC) }
+\location{December 2017 - May 2018 | \href{https://github.com/353swe/Marvin-353}{https://github.com/353swe/Marvin-353}}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+I was responsible for:
+\begin{tightemize}
+	\item Design and Development of the frontend data layer with Redux;
+	\item Maintenance of the CI Pipeline on Travis CI;
+	\item Maintenance of the Quality Assurance Process;
+	\item Management of the project dashboard integrating Metabase, Toggl, Travis CI and Python.
+\end{tightemize}
+\sectionsep
+\begin{comment}
+\section{Projects} 
+\begin{tabular}{rll}
+2014	     & top 52/2500  & KPCB Engineering Fellow\\
+2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+2013	     & National  & Jump Trading Challenge Finalist\\
+2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+2010     & National & Comp. Soc. of India's National Programming Contest\\
+\end{tabular}
+\sectionsep
+\end{comment}
+
+
+\end{minipage} 
+\end{document}
